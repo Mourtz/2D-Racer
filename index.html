@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | HillMania</title>
+    <title>Loading...</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -57,7 +57,11 @@
         createUnityInstance(canvas, config, (progress) => {
           
         }).then((unityInstance) => {
- 
+          document.title = "Hillmania demo";
+        });
+      };
+      document.body.appendChild(script);
+    </script>
         }).catch((message) => {
           alert(message);
         });
